@@ -128,7 +128,7 @@ i[class^="ph"]{line-height:1}
 .verdict div{padding:1.3rem 1.4rem;border-radius:18px;border:1px dashed var(--steel-line);color:#fff;font-weight:600;font-size:1.05rem;font-style:italic}
 .verdict-intro{margin-top:3rem;font-size:.95rem;color:rgba(255,255,255,.5)}
 @media(max-width:900px){.offer-grid,.verdict{grid-template-columns:1fr 1fr}.piece--key{grid-column:span 2}}
-@media(max-width:560px){.offer-grid,.verdict{grid-template-columns:1fr}.piece--key{grid-column:auto}}
+@media(max-width:560px){.offer-grid{grid-template-columns:1fr 1fr;gap:10px}.verdict{grid-template-columns:1fr}.piece--key,.piece--last{grid-column:span 2}.piece{padding:1.25rem}.piece i{font-size:22px;margin-bottom:.8rem}.piece h3{font-size:1rem}.piece p{font-size:.86rem}.piece--key h3{font-size:1.15rem}.piece--key p{font-size:.93rem}}
 
 /* BUILD PROCESS */
 .build{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:3.4rem;counter-reset:b}
@@ -182,7 +182,7 @@ i[class^="ph"]{line-height:1}
 .ex-core h3{font-size:1.08rem;margin-bottom:.35rem}
 .ex-core p{font-size:.93rem}
 @media(max-width:960px){.extras{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.extras{grid-template-columns:1fr}}
+@media(max-width:560px){.extras{grid-template-columns:1fr 1fr;gap:10px}.extras .ex-core{padding:1.2rem}.ex-core i{width:40px;height:40px;font-size:20px;margin-bottom:.9rem}.ex-core h3{font-size:.98rem}.ex-core p{font-size:.86rem}}
 
 /* TIMELINE */
 .tl{display:grid;grid-template-columns:repeat(4,1fr);margin-top:3.6rem;position:relative}
@@ -299,7 +299,7 @@ footer .brand-logo{height:30px}
 .reveal.in{opacity:1;transform:none;filter:none}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;filter:none;transition:none}html{scroll-behavior:auto}.btn,.btn .bi,summary::after,.piece{transition:none}}
-@media(max-width:720px){.wrap{padding:0 16px}.stat-core,.vs-core,.resp-core,.brief,.ex-core{padding:1.8rem 1.4rem}}
+@media(max-width:720px){.section{padding:4.5rem 0}.hero{padding-bottom:4rem}.included{padding:1.2rem}.plan-body{gap:1.6rem}.pay-amt{font-size:1.6rem}.calc{gap:1.6rem}.wrap{padding:0 16px}.stat-core,.vs-core,.resp-core,.brief,.ex-core{padding:1.8rem 1.4rem}}
 </style>
 </head>
 <body>
@@ -394,7 +394,7 @@ footer .brand-logo{height:30px}
   <div class="wrap">
     <span class="pill-tag reveal">La oferta irresistible</span>
     <h2 class="reveal d1">Qué hace que alguien que no te conoce <em>quiera comprar</em></h2>
-    <p class="lede reveal d2">Una oferta irresistible no es un descuento. Es un mensaje construido con seis piezas que encajan.</p>
+    <p class="lede reveal d2">Una oferta irresistible no es un descuento. Es un mensaje construido con piezas que encajan entre sí.</p>
 
     <div class="offer-grid">
       <div class="piece reveal"><i class="ph-light ph-user-focus"></i><h3>Persona</h3><p>A quién le hablamos, con su lenguaje y su momento de vida.</p></div>
@@ -403,7 +403,7 @@ footer .brand-logo{height:30px}
       <div class="piece reveal"><i class="ph-light ph-sparkle"></i><h3>Beneficio</h3><p>El cambio concreto que va a vivir, no la lista de módulos.</p></div>
       <div class="piece piece--key reveal d1"><i class="ph-light ph-key"></i><h3>Mecanismo único con nombre propio</h3><p>El método de la experta explicado como algo que solo ella tiene. Es lo que separa su programa de cualquier otro curso de desarrollo personal.</p></div>
       <div class="piece piece--key reveal"><i class="ph-light ph-compass-rose"></i><h3>Creencia central</h3><p>La única idea que, si el prospecto la acepta, hace que comprar sea la decisión lógica. Todo el embudo trabaja para instalarla.</p></div>
-      <div class="piece reveal d1"><i class="ph-light ph-path"></i><h3>Hilo conductor</h3><p>Anuncio, VSL, landing y WhatsApp dicen lo mismo, en el mismo orden.</p></div>
+      <div class="piece piece--last reveal d1"><i class="ph-light ph-path"></i><h3>Hilo conductor</h3><p>Anuncio, VSL, landing y WhatsApp dicen lo mismo, en el mismo orden.</p></div>
     </div>
 
     <p class="verdict-intro reveal">Cuando las piezas encajan, el prospecto llega a WhatsApp pensando:</p>
@@ -422,7 +422,7 @@ footer .brand-logo{height:30px}
     <p class="lede reveal d1">Nosotros escribimos y construimos. Su equipo graba. Cada paso alimenta al siguiente.</p>
     <div class="build">
       <div class="bezel reveal"><div class="core"><p class="b-num"><i class="ph-light ph-microphone"></i>Paso 1</p><h3>Verbalización</h3><p>Sesión con el experto para capturar su método en sus propias palabras.</p></div></div>
-      <div class="bezel reveal d1"><div class="core"><p class="b-num"><i class="ph-light ph-puzzle-piece"></i>Paso 2</p><h3>Estructura de oferta</h3><p>Las seis piezas armadas, más el mapa de ángulos para comunicar.</p></div></div>
+      <div class="bezel reveal d1"><div class="core"><p class="b-num"><i class="ph-light ph-puzzle-piece"></i>Paso 2</p><h3>Estructura de oferta</h3><p>Todas las piezas armadas, más el mapa de ángulos para comunicar.</p></div></div>
       <div class="bezel reveal d2"><div class="core"><p class="b-num"><i class="ph-light ph-film-script"></i>Paso 3</p><h3>Guion del VSL</h3><p>El video que presenta al experto y su método antes de la conversación.</p></div></div>
       <div class="bezel reveal d3"><div class="core"><p class="b-num"><i class="ph-light ph-browser"></i>Paso 4</p><h3>Landing page</h3><p>Diseñada, desarrollada y conectada al píxel, WhatsApp y CRM.</p></div></div>
       <div class="bezel reveal"><div class="core"><p class="b-num"><i class="ph-light ph-pen-nib"></i>Paso 5</p><h3>Copy de anuncios</h3><p>Guiones y textos por ángulo, listos para grabar y diseñar.</p></div></div>
